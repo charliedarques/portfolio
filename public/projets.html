@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Darques - Projets</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/popupProjets.js"></script>
+</head>
+<body>
+    <header class="headerpages"><h2>Mes projets</h2>
+        <div id="wrap">
+            <ul class="navbar">
+                <li><a href="#">Menu</a>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="parcours.html">Parcours</a></li>
+                        <li><a href="competences.html">Compétences</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="introduction">
+        <p>Voici ci-dessous les projets que j'ai réalisé.</p>
+    </section>
+    
+    <h2>Projets réalisés en BUT Informatique</h2>
+    <section id="portfolio">
+
+        <!-- projet 1-->
+        <div class="apercuProjet" id="trajets"><span class="ribbon">JAVA</span>
+            <h3>Plateforme d'optimisation d'itinéraires</h3>
+            <button id="voirProjet" class="boutonsProjets" onclick="seeProject1()">Voir le projet</button>
+        </div>
+        <div id="projet1" class="popup">
+            <div class="popup-content">
+                <h1><strong>TrueV</strong> - Plateforme d'optimisation d'itinéraires</h1>
+                <p><em>Travail de groupe en Java et JavaFX</em><br>
+                    <strong>Compétences visées :</strong> programmation orientée objet, intéraction humain-machine, théorie des graphes. <br>
+                    La plateforme calcule différents itinéraires entre une sélection de villes, selon différentes modalités de transports.<br>
+                    Les trajets sont optimisés selon les critères choisis par l'utilisateur. <br>
+                    <em>L'interface graphique de la plateforme n'est pas entièrement finalisée et contient des bugs d'exécution mais le programme 
+                    Java seul fonctionne.</em>
+                </p>
+                <div id="photosTrueV">
+                    <img src="projects/truev1.png">
+                    <img src="projects/truev2.png">
+                    <img src="projects/truev3.png">
+                </div>
+                <p>
+                    Ce projet visait à inclure tous les membres du groupe dans un réel projet de développement de logiciel, en s'appliquant autant
+                    sur le contenu sur la forme, en prenant en compte l'importance de la conception pré-programmation. Nous avons utiliser nos 
+                    connaissances en IHM pour créer une réelle interface graphique pour l'utilisateur, en respectant des prototypes préalablement
+                    élaborés, pour créer une application permettant d'optimiser les différents coûts de trajets d'un endroit à un autre selon des 
+                    critères choisis par l'utilisateur. Cela prenait donc en compte les économies en terme de temps, d'émission de CO2 ou de prix, 
+                    et le programme devait afficher seulement les trajets pertinents pour l'utilisateur (ex : ne pas afficher un trajet passant par 
+                    une autre ville que celle souhaitée et qui serait plus long)
+
+                    <ul><u>Compétences techniques : </u>
+                        <li>bonnes connaissances en algorithmie</li>
+                        <li>utilisation et création de graphes selon des algorithmes précis</li>
+                        <li>utilisation pertinente de la programmation orientée objet</li>
+                        <li>élaboration d'une interface ergonomique avec JavaFX</li>
+                        <li>création de diagramme UML</li>
+                    </ul>
+                    <ul><u>Autres compétences requises : </u>
+                        <li>compréhension et repèrage dans une documentation</li>
+                        <li>communication entre les membres du groupes et répartition équitable des tâches</li>
+                        <li>ouverture d'esprit et écoute des idées de chacun</li>
+                        <li>savoir demander de l'aide et en apporter</li>
+                        <li>rédaction précise et concise de rapports thématiques</li>
+                        <li>synthétisation d'informations</li>
+                    </ul>
+                    <h3>Ce que ce projet m'a apporté</h3>
+                    <ul>
+                        <li>J'ai su m'organiser rapidement et aider les autres membres du groupe à se répartir les tâches afin d'être plus efficaces,
+                            mais aussi de se partager toutes les informations pour que chacun soit au fait de l'avancée du projet.
+                        </li>
+                        <li>Je me suis beaucoup amélioré dans mes compétences de développement et d'algorithmie, j'ai conclu ce projet avec
+                            une impression de lacunes comblées.
+                        </li>
+                        <li>J'ai compris l'importance de prendre le temps de comprendre les demandes avant d'agir, notre sujet était très long et riche 
+                            en informations et il était nécessaire de dédier un temps à la simple compréhension du travail demandé, et s'assurer qu'elle 
+                            soit commune à chaque membre.
+                        </li>
+                        <li>J'ai petit à petit lâché ma mauvaise habitude de vouloir faire trop compliqué quand je fais face à un problème.</li>
+                        <li>J'ai été sincèrement intéressé par ce projet et j'ai aimé travailler dessus et comprendre comment l'amener à sa réalisation. 
+                            Il m'a poussé à améliorer mon code et mes compétences en algorithmie, et m'a rappelé que le développement d'application était 
+                            réellement ce que je souhaitais faire professionnellement.
+                        </li>
+                    </ul>
+                </p>
+                <a href="https://gitlab.univ-lille.fr/sae2.01-2.02/2024/C1" target="_blank">Voir le dépôt GitLab</a>
+                <button id="closePopup" class="boutonsProjets" onclick="closeProject1()">Fermer</button>
+                </div>
+            </div>
+
+        <!-- projet 2-->
+        <div class="apercuProjet" id="bdd"><span class="ribbon">SQL</span>
+            <h3>Script d'exploitation d'une base de données</h3>
+            <button id="voirProjet" class="boutonsProjets" onclick="seeProject2()">Voir le projet</button>
+        </div> 
+        <div id="projet2" class="popup">
+            <div class="popup-content">
+                <h1><strong>Script d'exploitation</strong> d'une BDD de Parcoursup</h1>
+                <p>
+                    <em>Travail en binôme en SQL (+ notions de Bash)</em> <br>
+                    <strong>Compétences visées :</strong> créer, exploiter et manipuler une base de données.<br>
+                    Le script collecte, formate, trie et importe des données issues du site de Parcoursup dans la table qu'il crée à cette finalité. <br>
+                    D'autres tables sont ensuite créées pour distinguer les catégories de chaque donnée (Etablissement, Lieu, Formation...) <br>
+                    Une fois le script exécuté, les données sont manipulables pour y effectuer des requêtes. 
+                </p>
+                <img src="projects/scriptsql.gif">
+                <p>
+                    Le but de ce projet était de se familiariser avec les bases de données, leur structure et leur fonctionnement, puis 
+                    de manipuler leur contenu en le modifiant et en l'exploitant. C'est un travail qui a demandé beaucoup de recherche et de logique 
+                    et qui a nécessité notre sérieux, notre exactitude et concrètude pour le réussir correctement.
+                    <ul><u>Compétences techniques :</u>
+                        <li>créer, gérer une base de données et manipuler son contenu
+                            <li>manuellement sur un logiciel (Access)</li>
+                            <li>en utilisant un langage de manipulation de données (PostgreSQL)</li>
+                        </li>
+                        <li>rédiger un script en SQL avec des appels de commandes système (Bash)</li>
+                        <li>élaborer un MCD</li>
+                    </ul>
+                    <ul><u>Autres compétences requises :</u>
+                        <li>prendre conscience des responsabilités d'un DBA</li>
+                        <li>utiliser différents supports et ressources pour résoudre un problème</li>
+                        <li>se montrer curieux face au manque de réponses à nos questionnements</li>
+                        <li>communiquer correctement et partager l'information</li>
+                        <li>être force de proposition</li>
+                        <li>organiser et gérer des informations</li>
+                        <li>respecter des délais</li>
+                    </ul>
+                    <h3>Ce que ce projet m'a apporté</h3>
+                    <ul>
+                        <li>Le domaine de la BDD m'intéresse beaucoup et j'ai pu en apprendre énormément lors de ce projet.</li>
+                        <li>J'ai acquis les réflexes de recherche et de réflexion quand je ne trouvais pas les réponses à mes questions,
+                            et j'ai pris des habitudes de vérification pour être certain de la fiabilité des informations que je trouvais,
+                            et si la réussite indiquée agissait bel et bien sur l'effet que j'avais réellement en tête et pas sur un autre 
+                            qui aurait masqué mon problème.
+                        </li>
+                        <li>J'ai développé une réelle capacité de réflexion et j'ai amélioré ma logique et ma rigueur.</li>
+                        <li>J'ai entraîné ma patience et mon sang-froid en cas de stress face aux nombreux problèmes chronovores rencontrés.</li>
+                        <li>J'ai compris l'intérêt de la documentation, notamment lors de l'utilisation de logiciels spécifiques.</li>
+                    </ul>
+                </p>
+                <a href="https://gitlab.univ-lille.fr/charlie.darques.etu/s2.04-bdd" target="_blank">Voir le dépôt GitLab</a>
+                <button id="closePopup2" class="boutonsProjets" onclick="closeProject2()">Fermer</button>
+            </div>
+        </div>
+
+        <!-- projet 3-->
+        <div class="apercuProjet" id="samsung"><span class="ribbon">HTML</span>
+            <h3>Plateforme web de covoiturage</h3>
+            <button id="voirProjet" class="boutonsProjets" onclick="seeProject3()">Voir le projet</button>
+        </div> 
+        <div id="projet3" class="popup">
+            <div class="popup-content">
+                <h1><strong>Samsung Mobility</strong> - Site de covoiturage fictif pour les employés de Samsung</h1>
+                <p>
+                    <em>Travail de groupe en HTML et CSS</em><br>
+                    <strong>Compétences visées :</strong> analyser et répondre à un besoin client, créer un site ergonomique et structuré.<br>
+                    Le site présente un service de covoiturage qui permet aux employés :
+                    <ul class="listeProjet">
+                        <li>soit de proposer un trajet à partager avec un autre employé</li> 
+                        <li>soit de demander à participer à un trajet proposé</li>
+                    </ul>
+                    Les données affichées sont fausses et les formulaires sont purement visuels et n'envoient aucune donnée. 
+                </p>
+                <img src="projects/samsungmobility.gif">
+                <p>L'objectif de ce projet était de comprendre les besoins des employés d'une entreprise fictive concernant l'aide à la 
+                    mobilité, et d'y amener comme réponse un site qui leur permettrait de covoiturer entre eux. Cela rassemblait donc 
+                    autant des compétences de <strong>gestion</strong>, de <strong>communication</strong> et de <strong>développement web</strong>,
+                    que vous avons mis en commun au sein d'un groupe de 4 personnes. <br>
+                     
+                    <ul><u>Compétences techniques :</u>
+                        <li>connaissances de HTML et CSS suffisantes pour ne pas avoir à utiliser JavaScript</li>
+                        <li>création de formulaires en HTML, mise en page CSS commune ou spécifique aux pages</li>
+                    </ul>
+                    
+                    <ul><u>Autres compétences requises :</u> 
+                        <li>analyser et recueillir les besoins d'une entreprise</li>
+                        <li>analyser des données (sondages, réponses à questionnaires)</li>
+                        <li>présenter un projet</li>
+                    </ul>
+                    <h3>Ce que ce projet m'a apporté</h3>
+                    <ul>
+                        <li>J'ai amélioré mon niveau en CSS et j'ai pu comprendre et retenir beaucoup de choses à ce sujet grâce à la pratique régulière</li>
+                        <li>J'ai appris à recueillir correctement des données, créer des personas, respecter des conventions et un cahier des charges</li>
+                        <li>J'ai compris l'importance de demander de l'aide lors de difficultés au lieu de rester bloqué. Tout le groupe s'est rendu compte 
+                            qu'il valait mieux demander conseil ou ré-répartir les tâches lorsqu'une deadline doit être respectée.
+                        </li>
+                        <li>J'étais sincèrement impliqué dans ce projet et j'ai beaucoup aimé le réaliser en équipe, je me suis senti en apprentissage réel et
+                            constructif, utile, productif. L'atmosphère concentrée, détendue et mature m'a aidé à travailler sérieusement et de manière 
+                            autonome tout en étant capable d'aider mes camarades. Ce projet m'a fait réaliser que j'aimais beaucoup le travail d'équipe et 
+                            que je souhaitais garder cette facette dans mon futur métier.
+                        </li>
+                    </ul>
+                </p>
+                <a href="" target="_blank">Voir le dépôt GitLab (à venir)</a>
+                <button id="closePopup3" class="boutonsProjets" onclick="closeProject3()">Fermer</button>
+            </div>
+        </div>
+
+
+        <!-- projet 4-->
+        <div class="apercuProjet" id="fight"><span class="ribbon">JAVA</span>
+            <h3>Jeu de combat en ligne de commande</h3>
+            <button id="voirProjet" class="boutonsProjets" onclick="seeProject4()">Voir le projet</button>
+        </div> 
+        <div id="projet4" class="popup">
+            <div class="popup-content">
+                <h1><strong>BitFight</strong> - Jeu de combat dans un terminal</h1>
+                <p>
+                    <em>Travail de groupe en Java</em><br>
+                    <strong>Compétences visées :</strong> découvrir <strong>l'agilité</strong> au cours d'un projet de 3 jours.<br>
+                    Le jeu reprend le fonctionnement de StreetFighter, où le joueur doit combattre un ennemi en utilisant 
+                    différentes attaques qui infligent différents dégâts.<br>
+                    Selon sa <strong>réactivité à écrire les attaques</strong> (temps limite aléatoire à chaque tour), les actions feront 
+                    effet ou non et les barres de vie et d'énergie du joueur et de l'ennemi évolueront. <br>
+                </p>
+                <img src="projects/bitfight.gif">
+                <p><strong>Détails à venir</strong></p>
+                <a href="https://gitlab.univ-lille.fr/2024-projet-agile-de-rentree/groupe-6" target="_blank">Voir le dépôt GitLab</a>
+                <button id="closePopup4" class="boutonsProjets" onclick="closeProject4()">Fermer</button>
+            </div>
+        </div>
+
+
+        <!-- projet 5-->
+        <div class="apercuProjet" id="especes"><span class="ribbon">JAVA</span>
+            <h3>Application de classement d'espèces</h3>
+            <button id="voirProjet" class="boutonsProjets" onclick="seeProject5()">Voir le projet</button>
+        </div> 
+        <div id="projet5" class="popup">
+            <div class="popup-content">
+                <h1>(en cours) Application de classement d'espèces</h1>
+                <p>
+                    <em>Travail de groupe en Java et JavaFX</em><br>
+                    <strong>Compétences visées :</strong> apprendre à utiliser IntelliJ Idea et réaliser un logiciel de 
+                    classement de données en utilisant <strong>l'algorithme k Nearest Neighbors</strong> et OpenCSV.<br>
+                    L'application suit le Design Pattern de <strong>Observer/Observable</strong> ainsi que celui du <strong>MVC</strong>. 
+                    Elle permet d'importer un fichier de données CSV pour les représenter sur un nuage de points dont on peut 
+                    modifier les axes. On peut également y ajouter un point en indiquant soi-même les valeurs de chaque caractéristique 
+                    et en suivant l'algorithme kNN, le programme devinera la catégorie correspondante. <br>
+                    <ul>Egalement utilisés dans ce projet : 
+                        <li><strong>Validation croisée</strong> (entraînement de l'algorithme)</li>
+                        <li><strong>Clean Code</strong></li>
+                        <li><strong>Généricité</strong> (vise à ce que l'application puisse prendre en charge n'importe quel fichier CSV et en traiter les 
+                            données correctement)
+                        </li>
+                    </ul>
+                    <strong>Le projet est en cours de développement.</strong>
+                </p>
+                <img>
+                <a href="https://gitlab.univ-lille.fr/sae302/2024/J4_SAE3.3" target="_blank">(à venir) Voir le dépôt GitLab</a>
+                <button id="closePopup5" class="boutonsProjets" onclick="closeProject5()">Fermer</button>
+            </div>
+        </div>
+
+
+        <!-- projet 6-->
+        <div class="apercuProjet" id="generator"><span class="ribbon">iJAVA</span>
+            <h3>Générateur de site web</h3>
+            <button id="voirProjet" class="boutonsProjets" onclick="seeProject6()">Voir le projet</button>
+        </div> 
+        <div id="projet6" class="popup">
+            <div class="popup-content">
+                <h1>Programme de <strong>génération de site web</strong></h1>
+                <p>
+                    <em>Travail individuel en iJava (version simplifiée de Java utilisée au premier semestre de BUT) et HTML</em><br>
+                    <strong>Compétences visées :</strong> utiliser Java pour créer des pages web structurées.<br>
+                    Ce programme est un des tous premiers que j'ai pu écrire et est loin d'être d'une grande qualité. Cependant il m'a apporté beaucoup de fierté dans mon 
+                    apprentissage et je tenais à le présenter.<br>
+                    À partir de fichier textes, le programme génère plusieurs pages d'un site de présentation chronologique d'anciens ordinateurs.
+                </p>
+                <img alt="Visuel à venir">
+                <a href="https://gitlab.univ-lille.fr/charlie.darques.etu/s1.01-implementation/-/tree/main/livrable4?ref_type=heads" target="_blank">Voir le dépôt GitLab</a>
+                <button id="closePopup6" class="boutonsProjets" onclick="closeProject6()">Fermer</button>
+            </div>
+        </div>
+</section>
+
+<h2>Projets personnels</h2>
+<section>
+    <p><em>(À venir)</em></p>
+    <section id="projetsPersos">
+        <div class="apercuProjet" id="neurokit"><span class="ribbon">JAVA</span>
+            <h3>Application "toolkit" pour personnes neurodivergentes</h3>
+            <button id="voirProjet" class="boutonsProjets" onclick="">Voir le projet</button>
+        </div>
+    </section>
+</section>
+
+<div id="gitlab">
+    <p>Vous pouvez accéder à mon Gitlab <a href="https://gitlab.univ-lille.fr/charlie.darques.etu" target="_blank">ici</a>.</p>
+    
+    <p><a href="index.html" class="accueil">Accueil</a></p>
+</div>
+</body>
+<footer>
+    <p id="textfooter">Charlie Darques - IUT de Lille, site de Villeneuve d'Ascq</p>
+    <a class="logo" title="Voir la formation" target="_blank" href="https://iut.univ-lille.fr/choisir-sa-formation?tx_ulcof_cof%5Baction%5D=show&tx_ulcof_cof%5Bcontroller%5D=ListFormation&tx_ulcof_cof%5BformItem%5D=fr-00082392">
+        <img class="logo" alt="Logo de l'IUT A de Lille" src="images/logo.svg">
+    </a>
+</footer>
+</html>
